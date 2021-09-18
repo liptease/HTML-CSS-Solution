@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+/* lexend deca 400 font-family: 'Lexend Deca', sans-serif; */
+/* big shoulders 700 font-family: 'Big Shoulders Display', cursive; */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 15px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color:hsl(0, 0%, 95%);
+}
+
+.component {
+    width: fit-content;
+    max-width: 900px;
+    height: fit-content;
+    display: flex;
+    flex-flow: row;
+    align-content: center;
+    margin: auto;
+}
+
+.cardWrapper {
+    margin: 50px;
+}
+
+.sedanCard {
+    order: 1;
+    width: 300px;
+    background-color: hsl(31, 77%, 52%);
+    display: flex;
+    border-radius: 10px 0 0 10px;
+}
+
+.suvCard {
+    order: 2;
+    width: 300px;
+    background-color: hsl(184, 100%, 22%);
+    display: flex;
+}
+
+.luxuryCard {
+    order: 3;
+    width: 300px;
+    background-color: hsl(179, 100%, 13%);
+    display: flex;
+    border-radius: 0 10px 10px 0;
+}
+
+.sedanHeading, .suvHeading, .luxuryHeading  {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+.component img {
+    order: 1;
+}
+
+.component h1 {
+    order: 2;
+    margin: 20px 0;
+}
+
+.component p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    order: 3;
+    line-height: 24px
+}
+
+.component button {
+    order 4;
+    margin: 40px 0 0 0;
+}
+
+.sedanCard button {
+    color:hsl(31, 77%, 52%);
+}
+
+.sedanCard button:hover {
+    color: hsl(0, 0%, 95%);;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvCard button {
+    color:hsl(184, 100%, 22%);
+}
+
+.suvCard button:hover {
+    color:hsl(0, 0%, 95%);
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxuryCard button {
+    color: hsl(179, 100%, 13%);
+}
+
+.luxuryCard button:hover {
+    color:hsl(0, 0%, 95%);
+    background-color: hsl(179, 100%, 13%);
+}
+
+button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    height: 40px;
+    width: 120px;
+    padding: 10px 20px;
+    border: 3px solid hsl(0, 0%, 95%);
+    border-radius: 500px;
+    background-color: color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 899px) {
+    .component {
+        flex-flow: column;
+    }
+
+    .sedanCard {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .luxuryCard {
+        border-radius: 0 0 10px 10px;
+    }
+}
